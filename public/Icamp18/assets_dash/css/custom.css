@@ -1,0 +1,12 @@
+.modal-lg {
+    max-width: 60% !important;
+}
+
+.imgwrapper {
+   width: 100%;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

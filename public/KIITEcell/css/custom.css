@@ -1,0 +1,90 @@
+#header .header-logo .logo-normal {
+	display: block;
+}
+
+#header .header-logo .logo-sticky {
+	display: none;
+}
+
+.sticky-header-active #header .header-logo .logo-normal {
+	display: none;
+}
+
+.sticky-header-active #header .header-logo .logo-sticky {
+	display: block;
+	margin: 30px 15px 15px 15px;
+}
+
+#header .header-logo {
+    height: auto !important;
+	width: auto !important;
+}
+
+#header .header-nav-main {
+	transition: margin-bottom 0.3s ease;
+}
+
+.sticky-header-active #header .header-nav-main {
+	margin-bottom: -55px;
+}
+
+section.section {
+	background: #fff;
+	margin: 30px 0;
+	padding: 50px 0;
+	border-top: 0;
+}
+
+#footer {	
+	margin-top: -30px;
+}
+
+.loading-overlay-showing > .loading-overlay::before {
+    color: #b6b6b6;
+    content: "Please wait...";
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    width: 100%;
+}
+
+.spinner {
+    position: absolute;
+    top: 39%;
+    left: 45%;    
+    width: 10%;
+}
+
+
+.image-editor{        
+        margin:-170px 250px 0px 55px;
+      }
+      .cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 5px solid #ccc;
+        border-radius: 3px;
+        margin-top: 7px;
+        width: 500px;
+        height: 500px;
+        display: block;
+      }
+
+      .cropit-preview-image-container {
+        cursor: move; 
+        background: url(../images/co.png) no-repeat;
+        background-size: 200px 200px;       
+      }
+
+      .cropit-preview-background {        
+        opacity: .2;
+        cursor: auto;
+      }  
+
+     input, .export {
+        /* Use relative position to prevent from being covered by image background */
+        position: relative;
+        z-index: 10;
+        display: inline;
+      }  
